@@ -23,6 +23,7 @@ public class Enemy : MonoBehaviour
         PlayerMovement player = other.gameObject.GetComponent<PlayerMovement>();
         if (player != null)
         {
+            player.ChangeLife(-1);
             Destroy(gameObject);
         }
     }

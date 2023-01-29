@@ -15,6 +15,14 @@ public class PlayerMovement : MonoBehaviour
 
     public bool CanTeleport;
 
+    public int Life { get { return CurrentLife; } }
+
+    public int maxLife = 3;
+
+    public int CurrentLife;
+
+    public int score;
+
     Vector2 movement;
     Vector2 mousePos;
 
@@ -24,6 +32,10 @@ public class PlayerMovement : MonoBehaviour
         //GameOver = false;
 
         CanTeleport = false;
+
+        CurrentLife = maxLife;
+
+        score = 0;
     }
     // Update is called once per frame
     void Update()
@@ -41,7 +53,28 @@ public class PlayerMovement : MonoBehaviour
         {
             SceneManager.LoadScene("Scene2");
         }
+
+        if (Life == 0)
+        {
+            Destroy(gameObject);
+        }
     }
+
+    public void ChangeScoreEnemy()
+    {
+        score += 100;
+    }
+
+    public void ChangeScoreSpawner()
+    {
+        score += 200;
+    }
+
+    public void ChangeLife(int amount)
+    {
+        CurrentLife = Mathf.Clamp(CurrentLife + amount, 0, maxLife);
+    }
+
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * MoveSpeed * Time.fixedDeltaTime); 
