@@ -21,8 +21,6 @@ public class PlayerMovement : MonoBehaviour
 
     public int CurrentLife;
 
-    public int score;
-
     Vector2 movement;
     Vector2 mousePos;
 
@@ -35,7 +33,6 @@ public class PlayerMovement : MonoBehaviour
 
         CurrentLife = maxLife;
 
-        score = 0;
     }
     // Update is called once per frame
     void Update()
@@ -60,15 +57,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public void ChangeScoreEnemy()
-    {
-        score += 100;
-    }
-
-    public void ChangeScoreSpawner()
-    {
-        score += 200;
-    }
 
     public void ChangeLife(int amount)
     {
