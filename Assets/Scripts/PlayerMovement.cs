@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -10,9 +11,20 @@ public class PlayerMovement : MonoBehaviour
 
     public Camera cam;
 
+    //private bool GameOver;
+
+    public bool CanTeleport;
+
     Vector2 movement;
     Vector2 mousePos;
 
+
+    void Start()
+    {
+        //GameOver = false;
+
+        CanTeleport = false;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -23,6 +35,11 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey("escape"))
         {
             Application.Quit();
+        }
+
+        if (Input.GetKeyDown(KeyCode.X) && (CanTeleport != false) )
+        {
+            SceneManager.LoadScene("Scene2");
         }
     }
     void FixedUpdate()
