@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Camera cam;
 
-    //private bool GameOver;
+    public bool GameOver;
 
     public bool CanTeleport;
 
@@ -28,16 +28,20 @@ public class PlayerMovement : MonoBehaviour
 
     AudioSource audioSource;
 
+    public int treasure;
+
     public AudioClip PickUpSound;
     void Start()
     {
-        //GameOver = false;
+        GameOver = false;
 
         CanTeleport = false;
 
         CurrentLife = maxLife;
 
         bubble = 0;
+
+        treasure= 0;
 
         audioSource = GetComponent<AudioSource>();
     }
@@ -67,9 +71,18 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (Life == 0)
+        if ((Life == 0) && (GameOver != true))
         {
             Destroy(gameObject);
+            GameOver = true;
+            SceneManager.LoadScene("LoseScreen");
+        }
+
+        if ((treasure == 1) && (GameOver != true))
+        {
+            Destroy(gameObject);
+            GameOver = true;
+            SceneManager.LoadScene("WinScreen");
         }
     }
 
@@ -77,6 +90,11 @@ public class PlayerMovement : MonoBehaviour
     {
         bubble += 1;
         PlaySound(PickUpSound);
+    }
+
+    public void ChangeTreasure() //public method to change the treasure count
+    {
+        treasure+= 1;
     }
 
     public void ChangeLife(int amount) // public method to change the bubble amount
