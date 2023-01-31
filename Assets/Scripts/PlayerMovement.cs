@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -29,6 +31,8 @@ public class PlayerMovement : MonoBehaviour
     AudioSource audioSource;
 
     public int treasure;
+
+     public TMP_Text LifeText;
 
     public AudioClip PickUpSound;
     void Start()
@@ -100,6 +104,8 @@ public class PlayerMovement : MonoBehaviour
     public void ChangeLife(int amount) // public method to change the bubble amount
     {
         CurrentLife = Mathf.Clamp(CurrentLife + amount, 0, maxLife);
+
+        LifeText.text = "X" + Life.ToString(); //the amount of life on text
     }
 
     void FixedUpdate()

@@ -9,4 +9,8 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Scene1");
     }
+    public void QuitButton()
+    {
+        Application.Quit();
+    }
 }

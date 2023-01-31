@@ -9,5 +9,10 @@ public class WinMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
+
+    public void QuitButton()
+    {
+        Application.Quit();
+    }
 }
 
