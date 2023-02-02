@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - PickUp
   - Spawner
+  - Harpoon
   layers:
   - Default
   - TransparentFX
@@ -14,11 +15,11 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Harpoon
+  - Enemy
+  - Bubble
+  - treasure
   - 
   - 
   - 
