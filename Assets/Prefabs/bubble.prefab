@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 7726420522349705704}
   - component: {fileID: 191389136317465070}
   - component: {fileID: 1985120733479265330}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: bubble
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
