@@ -6,14 +6,12 @@ public class bullet : MonoBehaviour
 {
     public GameObject hitEffect;
 
-
    void OnCollisionEnter2D(Collision2D collision)
     {
         Enemy e = collision.collider.GetComponent<Enemy>();
         if (e != null)
         {
             Destroy(e.gameObject);
-
         }
 
         EnemySpawner s = collision.collider.GetComponent<EnemySpawner>();

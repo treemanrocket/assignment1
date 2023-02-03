@@ -9,7 +9,6 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private GameObject enemyPrefabs;
 
     [SerializeField] private bool CanSpawn = true;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +20,8 @@ public class EnemySpawner : MonoBehaviour
         while (CanSpawn)
         {
             yield return wait;
+
+
 
             Instantiate(enemyPrefabs, transform.position, Quaternion.identity);
         }

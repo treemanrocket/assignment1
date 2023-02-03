@@ -13,11 +13,7 @@ GameObject:
   - component: {fileID: 1608158582796974076}
   - component: {fileID: 6624187573304139458}
   - component: {fileID: -1680402591676686729}
-<<<<<<< HEAD
-  m_Layer: 11
-=======
   m_Layer: 0
->>>>>>> 738906e74f62c9b6ff7550c4e0dc50b7639e63d3
   m_Name: bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32,12 +28,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408379849361662583}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.4072, y: -1.0179, z: 0}
-  m_LocalScale: {x: 0.1508352, y: -0.4097497, z: 0.38128}
+  m_LocalPosition: {x: 1.08, y: 1.37, z: 0}
+  m_LocalScale: {x: 0.104852006, y: 0.1, z: 0.38128}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2230819762695331314
 SpriteRenderer:
@@ -80,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 23046335ed7c7914a9b77c5458f301e4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+  m_Color: {r: 0.28648987, g: 0.6981132, b: 0.3696828, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -154,7 +150,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4, y: 4}
+    oldSize: {x: 1, y: 2}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -175,9 +171,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6280ddaa501d73d4ea521b1e4aaaedfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  hitEffect: {fileID: 6542584486168673717, guid: fa4aeb76a9ed55c48ba1004978f95c41, type: 3}
-=======
   hitEffect: {fileID: 6254570539717332240, guid: 0f4e945a4b134d144bceaeb172904b31, type: 3}
-  DeadSpawn: {fileID: 21300000, guid: 094104d687a9c02499f684a08c1d0a42, type: 3}
->>>>>>> 738906e74f62c9b6ff7550c4e0dc50b7639e63d3
