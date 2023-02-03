@@ -13,7 +13,11 @@ GameObject:
   - component: {fileID: 1608158582796974076}
   - component: {fileID: 6624187573304139458}
   - component: {fileID: -1680402591676686729}
+<<<<<<< HEAD
   m_Layer: 11
+=======
+  m_Layer: 0
+>>>>>>> 738906e74f62c9b6ff7550c4e0dc50b7639e63d3
   m_Name: bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -171,4 +175,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6280ddaa501d73d4ea521b1e4aaaedfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   hitEffect: {fileID: 6542584486168673717, guid: fa4aeb76a9ed55c48ba1004978f95c41, type: 3}
+=======
+  hitEffect: {fileID: 6254570539717332240, guid: 0f4e945a4b134d144bceaeb172904b31, type: 3}
+  DeadSpawn: {fileID: 21300000, guid: 094104d687a9c02499f684a08c1d0a42, type: 3}
+>>>>>>> 738906e74f62c9b6ff7550c4e0dc50b7639e63d3

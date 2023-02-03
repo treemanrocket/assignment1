@@ -15,7 +15,11 @@ GameObject:
   - component: {fileID: 8647027455407602502}
   - component: {fileID: 2253257002856745562}
   - component: {fileID: 4316159039988497854}
+<<<<<<< HEAD
   m_Layer: 8
+=======
+  m_Layer: 0
+>>>>>>> 738906e74f62c9b6ff7550c4e0dc50b7639e63d3
   m_Name: Triangle
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -132,13 +136,19 @@ MonoBehaviour:
   MoveSpeed: 5
   rb: {fileID: 8647027455407602501}
   cam: {fileID: 0}
+<<<<<<< HEAD
   GameOver: 0
+=======
+>>>>>>> 738906e74f62c9b6ff7550c4e0dc50b7639e63d3
   CanTeleport: 0
   maxLife: 3
   CurrentLife: 0
   bubble: 0
+<<<<<<< HEAD
   treasure: 0
   LifeText: {fileID: 0}
+=======
+>>>>>>> 738906e74f62c9b6ff7550c4e0dc50b7639e63d3
   PickUpSound: {fileID: 8300000, guid: a682534d2eae2584d88aae92dc5dd472, type: 3}
 --- !u!114 &8647027455407602502
 MonoBehaviour:
@@ -306,7 +316,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8647027456336500732}
+<<<<<<< HEAD
   m_Layer: 8
+=======
+  m_Layer: 0
+>>>>>>> 738906e74f62c9b6ff7550c4e0dc50b7639e63d3
   m_Name: firepoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

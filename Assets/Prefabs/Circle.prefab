@@ -12,7 +12,11 @@ GameObject:
   - component: {fileID: 2571499185550860323}
   - component: {fileID: 5766842698315898811}
   - component: {fileID: 2531627103810673443}
+<<<<<<< HEAD
   m_Layer: 10
+=======
+  m_Layer: 0
+>>>>>>> 738906e74f62c9b6ff7550c4e0dc50b7639e63d3
   m_Name: Circle
   m_TagString: Spawner
   m_Icon: {fileID: 0}
